@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro de Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div id="agrupar">
+        <div>
+            <header id="cabecera">
+                <img id="carroCompras" src="/img/celulares.png" alt="">
+                <div id="textoMov">
+                    MovilPhones
+                </div>
+            </header>
+            <div id="contenedor-principal">
+                <div id="barra-menu">
+                    <nav id="menu">
+                        <ul><a href="#barra-menu">Inicio</a></ul>
+                        <ul><a href="#articulos">Productos</a></ul>
+                        <ul><a href="registro/index.html">Registro</a></ul>
+                    </nav>
+                </div>
+                <section id="seccion">
+                    <section class="section-container">
+                        <div id="articulos">
+                        </div>
+                        <div class="container-modulo">
+                            <div style="margin-left: 7%; display: flex; flex-direction: column;">
+                                <article class="box">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h3>Articulos moviles online</h3>
+                                            </div>
+                                        </div>
+
+                                        <div id="art"></div>
+                                        <div id="stockprod">
+                                            <i><div id="stock"></div></i>
+                                            <i><div id="stock2"></div></i>
+                                            <i><div id="stock3"></div></i>
+                                            <i><div id="stock4"></div></i>
+                                        </div>
+
+                                        <div style="display: flex; justify-content: space-around;">
+                                            <button style="margin-left: -1%;" id="btnSamn">Agregar</button>
+                                            <button style="margin-left: -1%;" id="btnXiaom">Agregar</button>
+                                            <button style="margin-left: -1%;" id="btnIp12">Agregar</button>
+                                            <button style="margin-right: -1%;" id="btnIp10">Agregar</button>
+                                        </div>
+                                        <br>
+                                        <div id="contenedorart"> </div>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                            <div>
+                                <article class="box2">
+                                    <div class="contenido-tab">
+                                        <!-- Iniciar Sesion -->
+                                        <div id="iniciar-sesion">
+                                            <h2>Iniciar Sesión</h2><br>
+                                            
+                                            <div id="columna-container">
+                                                <div id="columna2">
+                                            <form novalidate name="miFormulario" id="miFormulario">
+                                                <div class="contenedor-input">
+                                                    <input id="userField" type="text" name="nombre"
+                                                    placeholder="Usuario"><br>
+                                                </div>
+                                                <div class="contenedor-input">
+                                                    <input id="PasswordField" type="password"
+                                                        placeholder="Contraseña"><br>
+                                                </div>
+                                                <button id="buttons">Iniciar sesión</button>
+                                            </form>
+                                        </div>
+                                            </div>
+                                        </div>
+
+
+                                    <div id="user"></div>
+                                    <h2>Carro de compras</h2>
+                                    <table class="table table-striped" style="margin-top: 30px;">
+                                        <tbody>
+                                            <tr>
+                                                <th>Producto</th>
+                                                <th>Precio</th>
+                                            </tr>
+                                            <tr>
+                                                <th><div id="carrito"></div></th>
+                                                <th><div id="precio"></div></th>
+                                            </tr>
+                                            <tr>
+                                                <th><div id="carrito2"></div></th>
+                                                <th><div id="precio2"></div></th>
+                                            </tr>
+                                            <tr>
+                                                <th><div id="carrito3"></div></th>
+                                                <th><div id="precio3"></div></th>
+                                            </tr>
+                                            <tr>
+                                                <th><div id="carrito4"></div></th>
+                                                <th><div id="precio4"></div></th>
+                                            </tr>
+                                        </tbody>
+                                        <table id="tablaPrecios" class="table table-striped" style="margin-top: 30px;"></table>
+                                        <div id="envio"></div>
+                                    </table>
+                                    <br>
+                                    <div id="totalfinal"></div>
+                                    <br>
+                                    <button id="btnComprar" value="">Comprar</button>
+                                    <button id="vaciar-carrito" type='button'> Restaurar productos</button>
+                            </div>
+                            </article>
+                        </div>
+            </div>
+        </div>
+        </section>
+        </section>
+    </div>
+    <footer id="pie"></footer>
+    </div>
+    </div>
+    <script src="./js/sesionUsuarios.js"></script>
+    <script src="./js/interfazInicio.js"></script>
+    <script src="./js/mostrarUsuario.js"></script>
+    <script src="./js/productos.js"></script>
+</body>
+</html>
