@@ -14,7 +14,7 @@ function inicioSesion(){
     const divElement = document.querySelector("#user");
     
     if(acceso == true){
-        divElement.textContent = `¡Hola,  ${UserName}`;
+        divElement.textContent = `¡Hola!,  ${UserName}`;
         document.querySelector('#PasswordField').value= "";
         document.querySelector('#userField').value = "";
         button.disabled = true;
